@@ -16,3 +16,8 @@
 
  */
 /*= require foundation */
+
+.below-header{
+	position:absolute;
+	top:100%;
+}
