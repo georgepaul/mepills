@@ -164,8 +164,7 @@
 .demo-1 .deco {
 	width: 260px;
 	height: 260px;
-	border: 2px dashed #ddd;
-	border: 2px dashed rgba(150,150,150,0.4);
+	
 	border-radius: 50%;
 	position: absolute;
 	bottom: 50%;
@@ -174,7 +173,7 @@
 }
 
 .demo-1 [data-icon]:after {
-    content: attr(data-icon);
+    /*content: attr(data-icon);*/
     font-family: 'AnimalsNormal';
 	color: #999;
 	text-shadow: 0 0 1px #999;
