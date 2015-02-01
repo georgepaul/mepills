@@ -10,7 +10,7 @@
         <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
         <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-
+ <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
 
 		<noscript>
@@ -21,7 +21,7 @@
         <link rel="stylesheet" type="text/css" href="/assets/custom.css" />
     </head>
     <body>
-        
+       
         <div class="container demo-1">
 		
 			<!-- Codrops top bar -->
@@ -50,6 +50,21 @@ position: absolute;" src="http://www.gearisle.com/media/catalog/product/cache/1/
 
 							<h2>Make Love Star</h2>
 							<blockquote><p>My husband got his first box from a friend who said it didn't work for him. I researched the product before he started taking it so I would know what we were getting into (with many products you will go back to your original size if you stop taking them, not with ExtenZe). The first few days, not much difference, but by the end of the first week.... Well, let's just say that now we are about a month into it and I am an extremely happy camper!</p><cite>Margi Clarke</cite></blockquote>
+
+<div class="payme">
+							 <%= form_tag charges_path do %>
+  <article>
+    <label class="amount">
+ 
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:PUBLISHABLE_KEY] %>"
+          data-description="A month's subscription"
+          data-amount="500"></script>
+<% end %>
+</div>
 						</div>
 					</div>
 					
@@ -103,6 +118,7 @@ position: absolute;" src="http://www.gearisle.com/media/catalog/product/cache/1/
 						<div class="sl-slide-inner">
 							
 
+
 							<div class="deco" style="border:none;">
 							
 							<img style="width: 220px;margin-left: 20px;" src="http://www.gearisle.com/media/catalog/product/cache/1/image/363x/245a1757ad7e525772eae9550c41f1d8/m/a/maxtrazen-extreme-gold-male-sexual-performance-enhancement-pills-platinum-1600mg-188.jpg" />
@@ -112,6 +128,10 @@ position: absolute;" src="http://www.gearisle.com/media/catalog/product/cache/1/
 
 							<h2>ExtenZe Plus</h2>
 							<blockquote><p>My husband got his first box from a friend who said it didn't work for him. I researched the product before he started taking it so I would know what we were getting into (with many products you will go back to your original size if you stop taking them, not with ExtenZe). The first few days, not much difference, but by the end of the first week.... Well, let's just say that now we are about a month into it and I am an extremely happy camper!</p><cite>Margi Clarke</cite></blockquote>
+
+
+
+
 						</div>
 					</div>
 				</div><!-- /sl-slider -->
@@ -139,7 +159,6 @@ position: absolute;" src="http://www.gearisle.com/media/catalog/product/cache/1/
 </ul>
 <ul   class="small-block-grid-3">
   <li><img src="http://www.gearisle.com/media/catalog/product/cache/1/image/650x/245a1757ad7e525772eae9550c41f1d8/e/x/extenze-plus-doctor-approved-male-enhancement-five-days-supply-266.jpg" />
-
 
   </li>
   <li>

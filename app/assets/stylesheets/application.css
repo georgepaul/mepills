@@ -21,3 +21,13 @@
 	position:absolute;
 	top:100%;
 }
+
+.payme{
+position: absolute;
+top: 230px;
+left: 46%;
+}
+
+.sl-content{
+	position:relative;
+}
